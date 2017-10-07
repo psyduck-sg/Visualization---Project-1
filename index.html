@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
+</head>
+<title>Visualization A1</title>
+<body>
+<center>
+<button onclick="plot_height()" type="submit" id="h" color=>Height</button>
+<button onclick="plot_weight()" type="submit" id="w">Weight</button>
+<button onclick="plot_avg()" type="submit" id="a">Average</button>
+<button onclick="plot_hr()" type="submit" id="hr">HR</button>
+<button onclick="create_bar()" type="submit" id="bc">Bar Chart</button>
+<button onclick="create_pie()" type="submit" id="pc">Pie Chart</button>
+<button onclick="create_forced()" type="submit" id="fd">Force-Directed Graph</button>
+<button id = "binCountUpdate" class="w3-btn w3-blue w3-border w3-round">press and drag to change bin count. <br/> current bin count is <div id="binsCount">11</div></button>
+</center>
+<script src="js/chart.js" charset="utf-8"></script>
+<script type="text/javascript">
+	activatebinCount()
+</script>
+</body>
+</html>
